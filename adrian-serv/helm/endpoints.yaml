@@ -1,2 +1,2 @@
 deploymentURIsLocal:
-  - "http://adrian-serv.adrian-proj:80" 
+  - "http://helloservice.adrian-proj:80" 
