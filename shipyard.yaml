@@ -3,15 +3,17 @@ kind: "Shipyard"
 metadata:
   name: "shipyard-sockshop"
 spec:
-  stages:
-    - name: "dev"
+  stages:     
+    - name: "qa"
       sequences:
-        - name: "delivery"
-          tasks:
-            - name: "deployment"
-              properties: 
-                deploymentstrategy: "user_managed"
-            - name: "test"
-              properties:
-                teststrategy: "performance"
+      - name: "delivery"
+        tasks:
+        - name: "deployment"
+          properties:
+            deploymentstrategy: "user_managed"
+        - name: "test"
+          properties:
+            teststrategy: "performance"
+        - name: "evaluation"
+          
       
